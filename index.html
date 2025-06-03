@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho: Conexão Campo e Cidade</title>
+    <!-- Inclui o Tailwind CSS via CDN para estilização rápida e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Define a fonte 'Inter' para todo o corpo do documento */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilos personalizados para o hero section */
+        .hero-section {
+            background-image: url('https://placehold.co/1200x600/a0c49d/ffffff?text=Campo+e+Cidade'); /* Imagem de fundo placeholder */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        /* Overlay para escurecer a imagem de fundo e melhorar a legibilidade do texto */
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Cabeçalho da Página -->
+    <header class="bg-green-700 text-white p-4 shadow-lg rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Agrinho 2025</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#inicio" class="hover:text-green-200 transition duration-300">Início</a></li>
+                    <li><a href="#campo" class="hover:text-green-200 transition duration-300">O Campo</a></li>
+                    <li><a href="#cidade" class="hover:text-green-200 transition duration-300">A Cidade</a></li>
+                    <li><a href="#galeria" class="hover:text-green-200 transition duration-300">Galeria</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal (Hero Section) -->
+    <section id="inicio" class="hero-section text-white py-24 text-center rounded-lg m-4 shadow-xl">
+        <div class="hero-overlay rounded-lg"></div>
+        <div class="container mx-auto relative z-10">
+            <h2 class="text-5xl font-extrabold mb-4 drop-shadow-lg">Conexão Essencial: Campo e Cidade</h2>
+            <p class="text-xl leading-relaxed max-w-3xl mx-auto drop-shadow-md">
+                Descubra como o campo e a cidade estão intrinsecamente ligados, formando uma rede vital para o nosso dia a dia.
+            </p>
+            <a href="#campo" class="mt-8 inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                Explore a Conexão
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção: O Campo Alimenta a Cidade -->
+    <section id="campo" class="py-16 bg-white rounded-lg m-4 shadow-lg">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center text-green-800 mb-12">O Campo Alimenta a Cidade</h3>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        O campo é a fonte de vida que nutre nossas cidades. É de lá que vêm os alimentos frescos que chegam à nossa mesa todos os dias: frutas, verduras, grãos, carnes e laticínios. A agricultura familiar, em particular, desempenha um papel fundamental, garantindo a diversidade e a qualidade dos produtos que consumimos.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        Além dos alimentos, o campo também fornece matérias-primas essenciais para diversas indústrias, como madeira, algodão e fibras. Essa produção rural é o motor que impulsiona a economia e a sustentabilidade das áreas urbanas.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <img src="https://placehold.co/400x300/6a994e/ffffff?text=Plantações" alt="Plantações no campo" class="w-full h-auto object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/400x300/a7c957/ffffff?text=Colheita" alt="Colheita de alimentos" class="w-full h-auto object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/400x300/8d8d8d/ffffff?text=Gado" alt="Gado em pastagem" class="w-full h-auto object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/400x300/c7d3b0/ffffff?text=Feira+Livre" alt="Feira livre na cidade" class="w-full h-auto object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: A Cidade Impulsiona o Campo -->
+    <section id="cidade" class="py-16 bg-gray-100 rounded-lg m-4 shadow-lg">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center text-blue-800 mb-12">A Cidade Impulsiona o Campo</h3>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 order-2 md:order-1">
+                    <img src="https://placehold.co/400x300/4a90e2/ffffff?text=Tecnologia" alt="Tecnologia na cidade" class="w-full h-auto object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/400x300/50e3c2/ffffff?text=Mercado" alt="Mercado urbano" class="w-full h-auto object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/400x300/9b59b6/ffffff?text=Infraestrutura" alt="Infraestrutura urbana" class="w-full h-auto object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/400x300/f1c40f/ffffff?text=Serviços" alt="Serviços na cidade" class="w-full h-auto object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                </div>
+                <div class="space-y-6 order-1 md:order-2">
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        A cidade, por sua vez, é um centro de inovação, tecnologia e serviços que são cruciais para o desenvolvimento do campo. Máquinas agrícolas modernas, sistemas de irrigação eficientes e softwares de gestão vêm das indústrias urbanas, otimizando a produção rural.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        Além disso, as cidades oferecem mercados consumidores para os produtos do campo, infraestrutura de transporte e logística, acesso à educação, saúde e pesquisa, contribuindo diretamente para a melhoria da qualidade de vida e a produtividade nas áreas rurais.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Galeria de Imagens -->
+    <section id="galeria" class="py-16 bg-white rounded-lg m-4 shadow-lg">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center text-purple-800 mb-12">Galeria: A Beleza da Conexão</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Imagens da Galeria -->
+                <img src="https://placehold.co/600x400/b8e0d4/333333?text=Campo+Verde" alt="Paisagem rural verde" class="w-full h-48 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                <img src="https://placehold.co/600x400/a0c49d/333333?text=Skyline+Urbano" alt="Skyline da cidade" class="w-full h-48 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                <img src="https://placehold.co/600x400/d9ed92/333333?text=Agricultor" alt="Agricultor trabalhando" class="w-full h-48 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                <img src="https://placehold.co/600x400/9b59b6/333333?text=Prédios" alt="Prédios modernos" class="w-full h-48 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                <img src="https://placehold.co/600x400/9d8189/333333?text=Mercado+Local" alt="Mercado de produtos locais" class="w-full h-48 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                <img src="https://placehold.co/600x400/e0b1cb/333333?text=Parque+Urbano" alt="Parque na cidade" class="w-full h-48 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                <img src="https://placehold.co/600x400/c7d3b0/333333?text=Rio+Rural" alt="Rio em paisagem rural" class="w-full h-48 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                <img src="https://placehold.co/600x400/8d8d8d/333333?text=Ponte+Cidade" alt="Ponte na cidade" class="w-full h-48 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé da Página -->
+    <footer class="bg-gray-800 text-white p-6 text-center mt-8 rounded-t-lg">
+        <div class="container mx-auto">
+            <p class="text-sm">&copy; 2025 Projeto Agrinho: Conexão Campo e Cidade. Todos os direitos reservados.</p>
+            <p class="text-xs mt-2">Desenvolvido para o Agrinho com ❤️</p>
+        </div>
+    </footer>
+
+</body>
+</html>
